@@ -29,18 +29,24 @@ const SiteHeader = () => {
         <ul className="navbar-nav">
           <li className="nav-item">
             <Link className="nav-link text-white" to="/">
-              Home
+              Movies
             </Link>
           </li>
 
           <li className="nav-item">
             <Link className="nav-link text-white" to="/movies/upcoming">
-              Upcoming
+              Upcoming Movies
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link text-white" to="/movies/watchList">
+            <Link className="nav-link text-white" to="/tv">
+              TV
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link className="nav-link text-white" to="/watchList">
               Watch List
             </Link>
           </li>
