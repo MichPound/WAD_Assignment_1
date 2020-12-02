@@ -4,6 +4,7 @@ import MovieDetails from "../components/movieDetails";
 import PageTemplate from "../components/templateMoviePage";
 import MovieReviews from "../components/movieReviews";
 import useMovie from "../hooks/useMovie";
+import OpenSimilarMoviesPage from '../components/buttons/openSimilarMoviesPage.js'
 
 const MoviePage = props => {
   const { id } = props.match.params;
@@ -43,6 +44,7 @@ const MoviePage = props => {
     ) : (
       <p>Waiting for movie details</p>
     )}
+        <OpenSimilarMoviesPage movie={movie} />  
     </>
   );
 };
