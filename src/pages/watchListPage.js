@@ -3,7 +3,7 @@ import MovieListPageTemplate from "../components/templateMovieListPage";
 import AddReviewButton from '../components/buttons/addReview'
 import {MoviesContext} from '../contexts/moviesContext'
 
-const WatchListPage = props => {
+const WatchListPage = () => {
   const context = useContext(MoviesContext);
   const upcoming = context.upcoming.filter( m => m.watchList )
 
