@@ -16,8 +16,8 @@ const MovieListPage = () => {
       title="No. Movies"
       movies={movies}  /* Changed */
       action={(movie) => {
-        // return <AddToFavoritesButton movie={movie} />;
-        return <OpenSimilarMoviesPage movie={movie} /> ;
+        return <AddToFavoritesButton movie={movie} />;
+        // return <OpenSimilarMoviesPage movie={movie} /> ;
       }}
     />
   );

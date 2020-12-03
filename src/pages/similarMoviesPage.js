@@ -17,6 +17,7 @@ const SimilarMoviesPage = props => {
 
   return (
     <SimilarMovies movie={props.location.state.movie}>
+      
     </SimilarMovies>
   );
   // return (
