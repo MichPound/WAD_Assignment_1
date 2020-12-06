@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getMovieCredits } from "../../api/tmdb-api";
-import { excerpt } from "../../util";
-
 
 const MovieCredits = ({ movie }) => {
 
@@ -14,29 +12,28 @@ const MovieCredits = ({ movie }) => {
     });
   }, []);
 
-
-  // movie.poster_path could be profile path
     return (
-      <>
-       <table className="table table-striped table-bordered table-hover">
-         <thead>
-         <tr>
-           <th scope="col">Name</th>
-           <th scope="col">Department</th>
-         </tr>
-         </thead>
-        <tbody>
-         {credits.map(r => {
-            return (
-              <tr key={r.id}>
-                <td>{r.name}</td>
-                <td>{excerpt(r.known_for_department)}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-       </table>
-      </>
+         credits.map(credit => {
+          return (
+            <div className="col-sm-3">
+              <div className="card  bg-white">
+                <img
+                  className="card-img-tag center "
+                  alt={credit.title}
+                  src={
+                    credit.profile_path
+                      ? `https://image.tmdb.org/t/p/w500/${credit.profile_path}`
+                      : "./film-poster-placeholder.png"
+                  }
+                />
+                <div className="card-body">
+                  <h4 className="card-title ">{credit.name}</h4>
+                  <h4 className="card-title ">{credit.known_for_department}</h4>
+                </div>
+              </div>
+              </div>
+           );
+          })
     );
   };
   

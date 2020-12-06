@@ -4,9 +4,6 @@ import MovieDetails from "../components/movieDetails";
 import PageTemplate from "../components/templateMoviePage";
 import MovieReviews from "../components/movieReviews";
 import useMovie from "../hooks/useMovie";
-import OpenSimilarMoviesPage from '../components/buttons/openSimilarMoviesPage.js'
-import SimilarMovieCard from "../components/similarMoviesTemplate";
-import SimilarMoviesPage from "./similarMoviesPage";
 import MovieCredits from "../components/movieCredits";
 
 const MoviePage = props => {
@@ -43,8 +40,6 @@ const MoviePage = props => {
           path={`/movies/:id/reviews`}
           render={props => <MovieReviews movie={movie} {...props} />}
         />
-        {/* <OpenSimilarMoviesPage movie={movie} />   */}
-        {/* <SimilarMovieCard movie={movie} /> */}
         <MovieCredits movie={movie} />
       </>
     ) : (
