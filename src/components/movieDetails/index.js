@@ -19,6 +19,12 @@ export default ({ movie }) => {
         <li key="rdv" className="list-group-item ">
           {movie.release_date}
         </li>
+        <li key="buh" className="list-group-item list-group-item-dark">
+          Budget ($)
+        </li>
+        <li key="but" className="list-group-item ">
+          {movie.budget}
+        </li>
       </ul>
 
       <ul className="list-group list-group-horizontal">
