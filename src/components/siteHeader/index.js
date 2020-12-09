@@ -52,12 +52,6 @@ const SiteHeader = () => {
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link text-white" to="/tv">
-              TV
-            </Link>
-          </li>
-
-          <li className="nav-item">
             <Link className="nav-link text-white" to="/watchList">
               Watch List
             </Link>
