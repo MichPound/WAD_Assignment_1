@@ -23,7 +23,7 @@ const App = () => {
         <SiteHeader /> 
         <div className="container-fluid">
           <MoviesContextProvider>
-            <GenresContextProvider>    {/* NEW */}
+            <GenresContextProvider>   
               <Switch>
                <Route exact path="/reviews/form" component={AddMovieReviewPage} />
                <Route path="/reviews/:id" component={MovieReviewPage} />
@@ -37,7 +37,7 @@ const App = () => {
                <Route path="/" component={HomePage} />
                <Redirect from="*" to="/" />
               </Switch>
-            </GenresContextProvider>    {/* NEW */}
+            </GenresContextProvider>   
           </MoviesContextProvider>
         </div>
       </div>

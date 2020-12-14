@@ -15,10 +15,10 @@ const SimilarMoviesPage = props => {
   // const context = useContext(MoviesContext);
   // const movies = props.location.state.movie;
 
-  return (
-    <SimilarMovies movie={props.location.state.movie}>
-    </SimilarMovies>
-  );
+  return <div className="row movies bg-info">
+    <SimilarMovies movie={props.location.state.movie}></SimilarMovies>
+  </div>
+
   // return (
   //   <SimilarMovies
   //     title="No. Movies"
