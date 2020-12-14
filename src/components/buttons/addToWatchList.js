@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import {MoviesContext} from "../../contexts/moviesContext";
+import "./button.css";
 
 const AddToWatchList = ({ movie }) => {
   const context = useContext(MoviesContext);
@@ -11,7 +12,7 @@ const AddToWatchList = ({ movie }) => {
   return (
     <button
       type="button"
-      className="btn w-100 btn-primary"
+      className="button btn w-100"
       onClick={handleAddToWatchList}
     >
       Add to Watch List

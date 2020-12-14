@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Redirect, Switch, Link } from "react-router-dom"
+import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom"
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import HomePage from "./pages/homePage";
 import MoviePage from './pages/movieDetailsPage'
@@ -15,21 +15,24 @@ import AddMovieReviewPage from './pages/addMovieReviewPage'
 import SimilarMoviesPage from './pages/similarMoviesPage'
 import PopularMoviesPage from './pages/popularMoviesPage'
 import NowPlayingPage from './pages/nowPlayingPage'
+import RegisterForm from './pages/registerForm'
+import "./main.css";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="jumbotron">
+      <div className="jumbotron main">
         <SiteHeader /> 
         <div className="container-fluid">
           <MoviesContextProvider>
             <GenresContextProvider>   
               <Switch>
+               <Route exact path="/register" component={RegisterForm} />
                <Route exact path="/reviews/form" component={AddMovieReviewPage} />
                <Route path="/reviews/:id" component={MovieReviewPage} />
                <Route exact path="/movies/favorites" component={FavoriteMoviesPage} />
                <Route exact path="/movies/upcoming" component={UpcomingMoviesPage} />
-               <Route path="/movies/similar" component={SimilarMoviesPage} />
+               <Route path="/movies/:id/similar" component={SimilarMoviesPage} />
                <Route exact path="/movies/popular" component={PopularMoviesPage} />
                <Route exact path="/movies/now_playing" component={NowPlayingPage} />
                <Route exact path="/watchList" component={WatchListPage} />

@@ -6,7 +6,7 @@ const TemplateMoviePage = ({ movie, children }) => {
   return (
     <>
       <MovieHeader movie={movie} />
-      <div className="row">
+      <div className="row back">
         <div className="col-3">
           <img
             src={

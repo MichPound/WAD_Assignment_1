@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { getMovieCredits } from "../../api/tmdb-api";
+import "./credits.css";
 
 const MovieCredits = ({ movie }) => {
 
@@ -16,7 +16,7 @@ const MovieCredits = ({ movie }) => {
          credits.map(credit => {
           return (
             <div className="col-sm-3">
-              <div className="card  bg-white">
+              <div className="card">
                 <img
                   className="card-img-tag center "
                   alt={credit.title}

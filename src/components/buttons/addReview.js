@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./button.css";
 
 const ReviewButton = ({ movie }) => {
   return (
     <Link
-      className="btn w-100 btn-primary "
+      className="button btn w-100"
       to={{
         pathname: `/reviews/form`,
         state: {
