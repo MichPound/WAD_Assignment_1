@@ -26,7 +26,7 @@ const App = () => {
   return (
     <BrowserRouter>
 
-<AuthProvider> 
+    <AuthProvider> 
 
       <div className="jumbotron main">
         <SiteHeader /> 

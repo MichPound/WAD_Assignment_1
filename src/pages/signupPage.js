@@ -40,15 +40,12 @@ export default function Signup(){
       
       <div className="form-group">
       <input className="form-control" type="email" placeholder="Email" name="email" ref={emailRef} autoFocus required />
-      {/* <input className="form-control" type="email" placeholder="Email" name="email" autoFocus required /> */}
       </div>
       <div className="form-group">
       <input className="form-control" type="password" placeholder="Password" name="password" ref={passwordRef} required />
-      {/* <input className="form-control" type="password" placeholder="Password" name="password" required /> */}
       </div>
       <div className="form-group">
       <input className="form-control" type="password" placeholder="Confirm Password" name="passwordConfirm" ref={passwordConfirmRef} required />
-      {/* <input className="form-control" type="password" placeholder="Password" name="password" required /> */}
       </div>
 
       {error && <Alert variant="danger">{error}</Alert>}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import "../../globals/fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./siteHeader.css";
@@ -9,11 +9,11 @@ import { useAuth } from "../../contexts/authContext"
 const SiteHeader = () => {
 
   const {currentUser, signout} = useAuth();
+
   async function handleLogout() {
       await signout()
   }
 
-  
   return (
     <nav className="navbar  navbar-light fixed-top headerColor ">
       <nav className="navbar-brand text-white">
@@ -26,18 +26,12 @@ const SiteHeader = () => {
         icon={["fas", "video"]}
         size="3x"
       />
-
-
      
-        <span className="navbar-text text-light">
-        {/* ................................................................................... */}
+      <span className="navbar-text text-light">
           {"Users Email: "}
-          {/* {currentUser.email} */}
-        {/* ................................................................................... */}
+          {currentUser ? currentUser.email : "Not Logged In"}
       </span>
      
-
-
       <FontAwesomeIcon
         className="navbar-text text-light"
         icon={["fas", "film"]}
@@ -83,32 +77,10 @@ const SiteHeader = () => {
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link text-white" to="/login">
-              Log In
-            </Link>
-          </li>
-
-          <li className="nav-item">
-           <button onClick={handleLogout} className="btn btn-primary">
-            Log Out
+           <button onClick={currentUser ? handleLogout : <Redirect to = "/login" />} className="btn logButton">
+              {currentUser ? "logout" : "login"}
            </button> 
           </li>
-
-          {/* if {currentUser.email} !== null {
-            <Link className="nav-link text-white" to="/login">
-              Signout
-            </Link>
-          }else{
-            <Link className="nav-link text-white" to="/login">
-              Log In
-            </Link>
-          } */}
-
-          {/* <li className="nav-item">
-            <Link className="nav-link text-white" to="/signup">
-              Sign Up
-            </Link>
-          </li> */}
 
         </ul>
       </nav>

@@ -12,6 +12,7 @@ import AddFavoriteButton from "../src/components/buttons/addToFavorites";
 import { MemoryRouter } from "react-router";
 import GenresContextProvider from "../src/contexts/genresContext";
 import { action } from "@storybook/addon-actions";
+// import LoginPage from "../src/pages/loginPage"
 
 const sample = {
   adult: false,
@@ -159,3 +160,7 @@ storiesOf("Movie Details Page/MovieHeader", module)
         <MovieCredits movie={sample} />
     </div>
   ));
+
+  // storiesOf("Forms/LoginPage", module).add("default", () => (
+    
+  // ));

@@ -6,3 +6,8 @@
 .headerColor{
     background-color:rgb(32,32,32)
 }
+
+.logButton{
+    background-color:transparent;
+    color: white;
+}

@@ -28,7 +28,7 @@ const MovieCredits = ({ movie }) => {
                 />
                 <div className="card-body">
                   <h4 className="card-title ">{credit.name}</h4>
-                  <h4 className="card-title ">{credit.known_for_department}</h4>
+                  <h4 className="card-title ">{credit.character}</h4>
                 </div>
               </div>
               </div>
