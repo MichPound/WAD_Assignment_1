@@ -11,3 +11,7 @@
     background-color:transparent;
     color: white;
 }
+
+.logButton:hover{
+    color: white;
+}

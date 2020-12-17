@@ -8,11 +8,9 @@ import MovieList from "../src/components/movieList";
 import MovieDetails from "../src/components/movieDetails";
 import MovieCredits from "../src/components/movieCredits"
 import MovieHeader from "../src/components/headerMovie";
-import AddFavoriteButton from "../src/components/buttons/addToFavorites";
 import { MemoryRouter } from "react-router";
 import GenresContextProvider from "../src/contexts/genresContext";
 import { action } from "@storybook/addon-actions";
-// import LoginPage from "../src/pages/loginPage"
 
 const sample = {
   adult: false,
@@ -160,7 +158,3 @@ storiesOf("Movie Details Page/MovieHeader", module)
         <MovieCredits movie={sample} />
     </div>
   ));
-
-  // storiesOf("Forms/LoginPage", module).add("default", () => (
-    
-  // ));

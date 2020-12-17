@@ -42,7 +42,7 @@ const MoviePage = props => {
         />
 
         <div className="row">
-        <MovieCredits movie={movie} />
+          <MovieCredits movie={movie} />
         </div>
 
       </>
