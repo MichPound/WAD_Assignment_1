@@ -33,7 +33,7 @@ For getting the credits, I used json.cast instead of json.results, to get the ca
 
 ## App Design.
 
-### Component catalogue (If required).
+### Component catalogue.
 
 I added my movie credits to the storybook which shows a list of the cast for the selected movie. There is only one piece which I added into the storybook which was new, I had more views made but could not add them to the storybook as they were not built up of different components.
 
@@ -131,7 +131,7 @@ All routes except for the login and signup routes are private. This is because u
 > Click 'Login' to change to the login view.
 
 
-## Independent learning (If relevant).
+## Independent learning.
 
 The only content in this assingment that was not covered in the labs is the authentication using Firebase. This means user have to sign up to be able to access any view besides the signup and register views. Firebase handles the data for all users signed up to the movie app.
 
