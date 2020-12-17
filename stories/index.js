@@ -6,6 +6,7 @@ import FilterControls from "../src/components/filterControls";
 import MoviesHeader from "../src/components/headerMovieList";
 import MovieList from "../src/components/movieList";
 import MovieDetails from "../src/components/movieDetails";
+import MovieCredits from "../src/components/movieCredits"
 import MovieHeader from "../src/components/headerMovie";
 import AddFavoriteButton from "../src/components/buttons/addToFavorites";
 import { MemoryRouter } from "react-router";
@@ -152,3 +153,9 @@ storiesOf("Movie Details Page/MovieHeader", module)
     <MemoryRouter initialEntries={["/"]}>{story()}</MemoryRouter>
   ))
   .add("default", () => <MovieHeader movie={sample} />);
+
+  storiesOf("Movie Details Page/MovieCredits", module).add("default", () => (
+    <div className="row">
+        <MovieCredits movie={sample} />
+    </div>
+  ));

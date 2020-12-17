@@ -15,36 +15,48 @@ import AddMovieReviewPage from './pages/addMovieReviewPage'
 import SimilarMoviesPage from './pages/similarMoviesPage'
 import PopularMoviesPage from './pages/popularMoviesPage'
 import NowPlayingPage from './pages/nowPlayingPage'
-import RegisterForm from './pages/registerForm'
+import Signup from './pages/signupPage'
+import LoginPage from './pages/loginPage'
 import "./main.css";
+import { AuthProvider } from "./contexts/authContext"
+import PrivateRoute from "./privateRoute"
+
 
 const App = () => {
   return (
     <BrowserRouter>
+
+<AuthProvider> 
+
       <div className="jumbotron main">
         <SiteHeader /> 
         <div className="container-fluid">
           <MoviesContextProvider>
             <GenresContextProvider>   
               <Switch>
-               <Route exact path="/register" component={RegisterForm} />
-               <Route exact path="/reviews/form" component={AddMovieReviewPage} />
-               <Route path="/reviews/:id" component={MovieReviewPage} />
-               <Route exact path="/movies/favorites" component={FavoriteMoviesPage} />
-               <Route exact path="/movies/upcoming" component={UpcomingMoviesPage} />
-               <Route path="/movies/:id/similar" component={SimilarMoviesPage} />
-               <Route exact path="/movies/popular" component={PopularMoviesPage} />
-               <Route exact path="/movies/now_playing" component={NowPlayingPage} />
-               <Route exact path="/watchList" component={WatchListPage} />
-               <Route path="/movies/:id" component={MoviePage} />
-               <Route path="/" component={HomePage} />
+               <Route exact path="/login" component={LoginPage} />
+               <Route exact path="/signup" component={Signup} />
+               <PrivateRoute exact path="/reviews/form" component={AddMovieReviewPage} />
+               <PrivateRoute path="/reviews/:id" component={MovieReviewPage} />
+               <PrivateRoute exact path="/movies/favorites" component={FavoriteMoviesPage} />
+               <PrivateRoute exact path="/movies/upcoming" component={UpcomingMoviesPage} />
+               <PrivateRoute path="/movies/:id/similar" component={SimilarMoviesPage} />
+               <PrivateRoute exact path="/movies/popular" component={PopularMoviesPage} />
+               <PrivateRoute exact path="/movies/now_playing" component={NowPlayingPage} />
+               <PrivateRoute exact path="/watchList" component={WatchListPage} />
+               <PrivateRoute path="/movies/:id" component={MoviePage} />
+               <PrivateRoute path="/" component={HomePage} />
                <Redirect from="*" to="/" />
               </Switch>
             </GenresContextProvider>   
           </MoviesContextProvider>
         </div>
       </div>
-    </BrowserRouter>
+
+    </AuthProvider> 
+
+  </BrowserRouter>
+
   );
 };
  
