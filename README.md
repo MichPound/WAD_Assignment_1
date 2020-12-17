@@ -103,31 +103,31 @@ All routes except for the login and signup routes are private. This is because u
 
 ### Data hyperlinking.
 
-[card]: ./public/card.png
+![][card]
 > Click a movie card to show the movies details.
 
 
-[clickReview]: ./public/clickReview.png
+![][clickReview]
 > Click 'Full Review' to load the movies full text review.
 
 
-[clickSimilar]: ./public/clickSimilar.png
+![][clickSimilar]
 > Click 'Similar Moives' button to load a list of similar movies.
 
 
-[clickHeader]: ./public/clickHeader.png
+![][clickHeader]
 > Click one of the pieces of text on the header to load relevant view. Clicking 'logout' will log out the user and load the login view.
 
 
-[clickWrite]: ./public/clickWrite.png
+![][clickWrite]
 > Click 'Write a Review' to be able to write a review for the movie.
 
 
-[clickLogin]: ./public/clickLogin.png
+![][clickLogin]
 > Click 'Register' to change to the register view.
 
 
-[clickRegister]: ./public/clickRegister.png
+![][clickRegister]
 > Click 'Login' to change to the login view.
 
 
