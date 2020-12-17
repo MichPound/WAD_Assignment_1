@@ -3,20 +3,17 @@
 Name: Michael Pound, 20085540
 
 ## Features.
-
-...... A bullet-point list of the ADDITIONAL user features you have implemented for the  Movies Fan app ......,
  
- + Feature 1 = Popular movies view, this displays a list of popular movies on a new view.
- + Feature 2 = Now playing movies view, this displays a list of now playing movies on a new view.
- + Feature 3 = Similar movies view, this displays a list of similar movies on a new view for either popular movies or now playing movies.
+ + Feature 1 = Popular movies view, this displays a list of popular movies in a new view.
+ + Feature 2 = Now playing movies view, this displays a list of now playing movies in a new view.
+ + Feature 3 = Similar movies view, this displays a list of similar movies in a new view for either popular movies or now playing movies.
  + Feature 4 = Watchlist view, displays movies added to watchlist in a new view.
  + Feature 5 = Movie credits, used to display cast members on movies details page.
- + Feature 6 = Movie budget, displays the movie budget on movies details page.
- + Feature 7 = Authentication using Firebase. Using this third party authentication I added in the functionality that only logged in users can see any of the movie pages. Added two new views, one for registration of a new user and one for logging in.
+ + Feature 6 = Added movie credits to Story Book.
+ + Feature 7 = Movie budget, displays the movie budget on movies details page.
+ + Feature 8 = Authentication using Firebase. Using this third party authentication I added in the functionality that only logged in users can see any of the movie pages. Added two new views, one for registration of a new user and one for logging in.
 
 ## Setup requirements (If required).
-
-...... A brief explanation of any non-standard setup steps necessary to run your app/client locally (after cloning the repo) ........
 
 For use with the third party authentication using Firebase I had to create an account with Firebase, this is free. I then added a new project, this was name appriopriatly and then created. Because this was for euthentication I enabled the email and password sign in method for the project. I then added a web app to the project and this generated all the configuration information I needed to connect my local react assignment to my project on Firebase. This configuration information I then placed along with my TMDB key in my .env file so I could exclude it easily from version control.
 
@@ -26,8 +23,6 @@ Here is a list of a few extra commands I ran to install extra addons:
 + npm i bootstrap react-bootstrap
 
 ## API Data Model.
-
-..... List the additional TMDB endpoints used in your assignment, e.g.
 
 + https://api.themoviedb.org/3/movie/popular - Gets popular movies
 + https://api.themoviedb.org/3/movie/now_playing - Gets now playing movies
@@ -40,11 +35,16 @@ For getting the credits, I used json.cast instead of json.results, to get the ca
 
 ### Component catalogue (If required).
 
-....... Insert a screenshot from the Storybook UI, hi-light stories relating to new/modified components you developed - see example screenshot below] .......
+I added my movie credits to the storybook which shows a list of the cast for the selected movie. There is only one piece which I added into the storybook which was new, I had more views made but could not add them to the storybook as they were not built up of different components.
 
 ![][stories]
 
 ### UI Design.
+
+![][movies]
+![][popular]
+![][similar]
+![][upcoming]
 
 ...... Insert screenshots of the new/modified views you have added to the Movies Fan app. Include a caption for each one clearly stating its purpose and any user interaction it supports ........
 
@@ -87,4 +87,10 @@ All routes except for the login and signup routes are private. This is because u
 [review]: ./public/review.png
 [reviewLink]: ./public/reviewLink.png
 [cardLink]: ./public/cardLink.png
-[stories]: ./public/storybook.png
+
+
+[stories]: ./public/story.png
+[movies]: ./public/movies.png
+[popular]: ./public/popular.png
+[similar]: ./public/similar.png
+[upcoming]: ./public/upcoming.png1
