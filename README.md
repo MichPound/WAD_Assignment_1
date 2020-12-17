@@ -41,41 +41,52 @@ I added my movie credits to the storybook which shows a list of the cast for the
 
 ### UI Design.
 
-I have included all views in this section because I have changed to look of the entire application and wanted to present that.
++ I have included all views in this section because I have changed to look of the entire application and wanted to present that.
 
 ![][movies]
 >The main page which shows a list of movies, the user can click on a movie to load that movies details or they can click add to favorites to add that movie to the favorites list.
 
+
 ![][popular]
 >Shows a list of popular movies, the user can click on a movie to load that movies details or they can click similar movies to display a list of similar movies to the selected movie.
+
 
 ![][similar]
 >Shows a list of similar movies for the selected movie, the user can click on a movie to load that movies details.
 
+
 ![][upcoming]
 >Shows a list of upcoming movies, the user can click on a movie to load that movies details or they can click add to watchlist to add that movie to the watchlist.
+
 
 ![][nowPlaying]
 >Shows a list of nowplaying movies, the user can click on a movie to load that movies details or they can click similar movies to display a list of similar movies to the selected movie.
 
+
 ![][favourites]
 >Show a list of all movies added to favorites, the user can click on a movie to load that movies details or they can click write a review to open the write a review view.
 
+
 ![][watchList]
 >Show a list of all movies added to the watchlist, the user can click on a movie to load that movies details.
+
 
 ![][details]
 ![][cast]
 >Shows a detailed view of the selected movie, shows the movies reviews and the user can click full review to see the full review in a seperate view. Also displays a list of all the movies cast and their character.
 
+
 ![][fullReview]
 >Shows the full review for the selected movie.
+
 
 ![][writeReview]
 >Allows the user to write a custom a review for the selected movie.
 
+
 ![][login]
 >Shows the login form for logging into an existing account, clicking register will switch to the register view.
+
 
 ![][register]
 >Shows the register form for creating an account, clicking login will switch to the login view.
@@ -92,13 +103,33 @@ All routes except for the login and signup routes are private. This is because u
 
 ### Data hyperlinking.
 
-.... Use screenshots to illustrate where data hyperlinking is present in your views - include captions.
+[card]: ./public/card.png
+> Click a movie card to show the movies details.
 
-![][cardLink]
-> Clicking a card causes the display of that movie's details.
 
-![][reviewLink]
->Clicking the 'Full Review' for a review extract will display the full text of the review
+[clickReview]: ./public/clickReview.png
+> Click 'Full Review' to load the movies full text review.
+
+
+[clickSimilar]: ./public/clickSimilar.png
+> Click 'Similar Moives' button to load a list of similar movies.
+
+
+[clickHeader]: ./public/clickHeader.png
+> Click one of the pieces of text on the header to load relevant view. Clicking 'logout' will log out the user and load the login view.
+
+
+[clickWrite]: ./public/clickWrite.png
+> Click 'Write a Review' to be able to write a review for the movie.
+
+
+[clickLogin]: ./public/clickLogin.png
+> Click 'Register' to change to the register view.
+
+
+[clickRegister]: ./public/clickRegister.png
+> Click 'Login' to change to the login view.
+
 
 ## Independent learning (If relevant).
 
@@ -129,3 +160,11 @@ All routes except for the login and signup routes are private. This is because u
 
 [login]: ./public/login.png
 [register]: ./public/register.png
+
+[card]: ./public/card.png
+[clickReview]: ./public/clickReview.png
+[clickSimilar]: ./public/clickSimilar.png
+[clickHeader]: ./public/clickHeader.png
+[clickWrite]: ./public/clickWrite.png
+[clickLogin]: ./public/clickLogin.png
+[clickRegister]: ./public/clickRegister.png
