@@ -41,18 +41,33 @@ I added my movie credits to the storybook which shows a list of the cast for the
 
 ### UI Design.
 
+I have included all views in this section because I have changed to look of the entire application and wanted to present that.
+
 ![][movies]
+>The main page which shows a list of movies, the user can click on a movie to load that movies details or they can click add to favorites to add that movie to the favorites list.
 ![][popular]
+>Shows a list of popular movies, the user can click on a movie to load that movies details or they can click similar movies to display a list of similar movies to the selected movie.
 ![][similar]
+>Shows a list of similar movies for the selected movie, the user can click on a movie to load that movies details.
 ![][upcoming]
-
-...... Insert screenshots of the new/modified views you have added to the Movies Fan app. Include a caption for each one clearly stating its purpose and any user interaction it supports ........
-
-![][movieDetail]
->Shows detailed information on a movie. Clicking the 'Show Reviews' button will display extracts from critic reviews.
-
-![][review]
->Shows the full text for a movie review. 
+>Shows a list of upcoming movies, the user can click on a movie to load that movies details or they can click add to watchlist to add that movie to the watchlist.
+![][nowPlaying]
+>Shows a list of nowplaying movies, the user can click on a movie to load that movies details or they can click similar movies to display a list of similar movies to the selected movie.
+![][favourites]
+>Show a list of all movies added to favorites, the user can click on a movie to load that movies details or they can click write a review to open the write a review view.
+![][watchList]
+>Show a list of all movies added to the watchlist, the user can click on a movie to load that movies details.
+![][details]
+![][cast]
+>Shows a detailed view of the selected movie, shows the movies reviews and the user can click full review to see the full review in a seperate view. Also displays a list of all the movies cast and their character.
+![][fullReview]
+>Shows the full review for the selected movie.
+![][writeReview]
+>Allows the user to write a custom a review for the selected movie.
+![][login]
+>Shows the login form for logging into an existing account, clicking register will switch to the register view.
+![][register]
+>Shows the register form for creating an account, clicking login will switch to the login view.
 
 ## Routing.
 
@@ -93,4 +108,15 @@ All routes except for the login and signup routes are private. This is because u
 [movies]: ./public/movies.png
 [popular]: ./public/popular.png
 [similar]: ./public/similar.png
-[upcoming]: ./public/upcoming.png1
+[upcoming]: ./public/upcoming.png
+[nowPlaying]: ./public/nowPlaying.png
+[favourites]: ./public/favourites.png
+[watchList]: ./public/watchList.png
+[details]: ./public/details.png
+[cast]: ./public/cast.png
+
+[fullReview]: ./public/fullReview.png
+[writeReview]: ./public/writeReview.png
+
+[login]: ./public/login.png
+[register]: ./public/register.png
