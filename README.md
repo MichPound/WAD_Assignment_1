@@ -133,16 +133,17 @@ All routes except for the login and signup routes are private. This is because u
 
 ## Independent learning (If relevant).
 
-. . . . . Briefly mention each technologies/techniques used in your project codebase that were not covered in the lectures/labs. Provide source code filename references to support your assertions and include reference material links (articles/blogs).
+The only content in this assingment that was not covered in the labs is the authentication using Firebase. This means user have to sign up to be able to access any view besides the signup and register views. Firebase handles the data for all users signed up to the movie app.
+
+![][fireBase]
+
+### Sites used for implementing authentication using Firebase: 
++ https://react-firebase-js.com/docs/react-firebase-auth/getting-started
++ https://blog.logrocket.com/user-authentication-firebase-react-apps/
++ https://www.youtube.com/watch?v=PKwu15ldZ7k
++ https://levelup.gitconnected.com/authentication-using-firebase-and-react-js-99392c6fa58b
 
 ---------------------------------
-
-[model]: ./data.jpg
-[movieDetail]: ./public/movieDetail.png
-[review]: ./public/review.png
-[reviewLink]: ./public/reviewLink.png
-[cardLink]: ./public/cardLink.png
-
 
 [stories]: ./public/story.png
 [movies]: ./public/movies.png
@@ -168,3 +169,5 @@ All routes except for the login and signup routes are private. This is because u
 [clickWrite]: ./public/clickWrite.png
 [clickLogin]: ./public/clickLogin.png
 [clickRegister]: ./public/clickRegister.png
+
+[fireBase]: ./public/fireBase.png
