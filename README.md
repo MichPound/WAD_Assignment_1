@@ -45,33 +45,42 @@ I have included all views in this section because I have changed to look of the 
 
 ![][movies]
 >The main page which shows a list of movies, the user can click on a movie to load that movies details or they can click add to favorites to add that movie to the favorites list.
+
 ![][popular]
 >Shows a list of popular movies, the user can click on a movie to load that movies details or they can click similar movies to display a list of similar movies to the selected movie.
+
 ![][similar]
 >Shows a list of similar movies for the selected movie, the user can click on a movie to load that movies details.
+
 ![][upcoming]
 >Shows a list of upcoming movies, the user can click on a movie to load that movies details or they can click add to watchlist to add that movie to the watchlist.
+
 ![][nowPlaying]
 >Shows a list of nowplaying movies, the user can click on a movie to load that movies details or they can click similar movies to display a list of similar movies to the selected movie.
+
 ![][favourites]
 >Show a list of all movies added to favorites, the user can click on a movie to load that movies details or they can click write a review to open the write a review view.
+
 ![][watchList]
 >Show a list of all movies added to the watchlist, the user can click on a movie to load that movies details.
+
 ![][details]
 ![][cast]
 >Shows a detailed view of the selected movie, shows the movies reviews and the user can click full review to see the full review in a seperate view. Also displays a list of all the movies cast and their character.
+
 ![][fullReview]
 >Shows the full review for the selected movie.
+
 ![][writeReview]
 >Allows the user to write a custom a review for the selected movie.
+
 ![][login]
 >Shows the login form for logging into an existing account, clicking register will switch to the register view.
+
 ![][register]
 >Shows the register form for creating an account, clicking login will switch to the login view.
 
 ## Routing.
-
-...... Insert a list of the additional routes supported by your Movies Fan app. If relevant, specify which of the routes require authentication, i.e. protected/private.
 
 + /login (public) - Displays login page for existing users to log in.
 + /signup (public) - Displays signup page for users who do not have accounts yet.
