@@ -13,7 +13,7 @@ Name: Michael Pound, 20085540
  + Feature 7 = Movie budget, displays the movie budget on movies details page.
  + Feature 8 = Authentication using Firebase. Using this third party authentication I added in the functionality that only logged in users can see any of the movie pages. Added two new views, one for registration of a new user and one for logging in.
 
-## Setup requirements (If required).
+## Setup requirements.
 
 For use with the third party authentication using Firebase I had to create an account with Firebase, this is free. I then added a new project, this was name appriopriatly and then created. Because this was for euthentication I enabled the email and password sign in method for the project. I then added a web app to the project and this generated all the configuration information I needed to connect my local react assignment to my project on Firebase. This configuration information I then placed along with my TMDB key in my .env file so I could exclude it easily from version control.
 
